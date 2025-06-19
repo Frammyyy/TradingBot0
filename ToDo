@@ -1,0 +1,35 @@
+4. Build Strategy
+   - ✅ Example: RSI Reversal
+   - ✅ Define Buy/Sell Rules
+   - 🔄 Add Stop Loss / Take Profit logic
+   - 🔄 Tune RSI thresholds (30/70 → try 35/65, etc.)
+   - 🧠 Consider trend filters (e.g., EMA50)
+
+5. Fetch & Analyze Data
+   - Use yfinance + ta + pandas
+   - Calculate indicators (RSI, MA, EMA)
+   - Visualize price and signals (matplotlib)
+
+6. Connect to Alpaca API
+   - Use alpaca-trade-api
+   - Check account + positions
+   - Prepare for live/paper trading
+
+7. Execute Trades
+   - Buy/Sell based on signals
+   - Run logic in hourly/daily loop
+
+8. Test & Monitor
+   - Use paper trading to test
+   - Monitor trades, logs, account balance
+
+9. Add Discord Alerts
+   - Use discord.py or webhook
+   - Send trade signals / status updates to server
+
+10. Improve + Go Live
+    - Add risk mgmt: position sizing, max drawdown
+    - Logging and error handling
+    - Switch to live trading (real money)
+
+

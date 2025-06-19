@@ -1,0 +1,67 @@
+✅ Completed Tasks (with Daily Breakdown)
+🗓 May 20, 2025
+
+    Retrieved AAPL stock price data using yfinance
+    Calculated RSI using the ta library
+    Printed latest RSI values and generated real-time BUY/SELL signals
+    Developed the initial RSI-based reversal strategy
+    Buy signal if RSI < 30, Sell signal if RSI > 70
+
+🗓 May 21, 2025
+
+    Separated code into modular files: backtest.py, live.py, strategy.py, utils.py
+    Developed full backtesting logic using historical price data
+    Added support for Buy, Sell, Short Sell, and Buy to Cover
+    Implemented stop loss and take profit functionality
+    Logged trade details and reasons into a pandas DataFrame
+    Simulated portfolio balance tracking
+    Resolved Excel export error caused by timezone-aware datetime
+    Final portfolio balance from backtest: $88.08
+
+🗓 May 22, 2025
+
+    Created and organized progress report and to-do in a persistent format
+    Discussed plan to expand beyond RSI and build strategy-confirmation engine
+    Updated progress report structure to be more detailed and date-stamped
+    Brainstormed multi-strategy confirmation system
+
+🗓 May 27, 2025
+
+    Added time limit filtering to trades for US market hours only
+    Developed initial ideas for dynamic take profit/stop loss adjustment and multi-currency strategy expansion
+
+🚧 Current Focus & In Progress
+6. Strategy Expansion & Signal Confirmation
+
+ Design logic to combine multiple indicators:
+ RSI (working)
+ MACD
+ EMA Crossovers
+ Candlestick Patterns
+ Modify trade execution logic to require agreement across strategies
+ Introduce voting or confidence scoring system for trade signals
+
+🧭 Next To-Do Tasks
+7. Technical Enhancements
+
+ Implement MACD and EMA indicators in strategy.py
+ Create modular strategy engine with selectable rules
+ Add config system (JSON/YAML) for strategy setup and parameters
+
+8. Live Trading Setup
+
+ Connect to Alpaca API using alpaca-trade-api
+ Authenticate credentials and check account info (balance, positions)
+ Enable paper/live trading with real-time signals
+
+9. Monitoring & Alerts
+
+ Use discord.py to send alerts to Discord server
+ Notify on strategy confirmations and trade executions
+ Periodically send account status and trade logs
+
+10. Final Optimization
+
+ Add persistent logs and exception handling
+ Implement risk management features (position sizing, trade cooldowns)
+ Finalize structure for live deployment and continuous monitoring
