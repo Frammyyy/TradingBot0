@@ -1,6 +1,6 @@
 from STRATS import ema_strat as ema
 from STRATS import rsi_strat as rsi
-from pair_config import PAIR_CONFIG
+from configs import PAIR_CONFIG
 
 
 def calculate_indicators(df, symbol):
@@ -29,7 +29,7 @@ def generate_entry_signal(df, index, symbol):
                                      rsi_down=config['rsi_down'])
     trend = ema.get_trend(df, index)
 
-    if rsi_signal == "BUY":     # == "BULL"
+    if rsi_signal == "BUY" and trend == "BULL":
         return "BUY"
     elif rsi_signal == "SELL" and trend == "BEAR":
         # SELL here means short entry signal
