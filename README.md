@@ -9,7 +9,7 @@ Built with a focus on **scalability**, **custom strategy integration**, and **dy
 
 ### Core System
 
-* Modular architecture — each broker and strategy runs independently.
+* Modular architecture — Each broker and strategy runs independently.
 * Supports live and backtest environments.
 * Configurable broker settings stored under `/broker_configs/`.
 * Dynamic stop-loss and take-profit system with real-time trailing logic.
